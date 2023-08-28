@@ -45,7 +45,7 @@ def askPlayerName():
     nameWindow.geometry('800x600')
     screen_width=nameWindow.winfo_screenwidth()
     screen_height=nameWindow.winfo_screenheight()
-    bg = ImageTk(file = "./assets/background.png")
+    bg = ImageTk.photoImage(file = "./assets/background.png")
 
     canvas1 = Canvas( nameWindow, width = 500,height = 500)
     canvas1.pack(fill = "both", expand = True)
