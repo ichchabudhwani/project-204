@@ -61,6 +61,11 @@ def askPlayerName():
 
     nameWindow.resizable(True, True)
     nameWindow.mainloop()
+
+def recivedMsg():
+    pass
+
+
 def setup():
     global SERVER
     global PORT
