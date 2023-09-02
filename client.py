@@ -77,6 +77,9 @@ def setup():
     SERVER = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     SERVER.bind((IP_ADDRESS, PORT))
 
+    thread=Thread(target=recievedMsg)
+    thread.start()
+
 
     # Creating First Window
     askPlayerName()
